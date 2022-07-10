@@ -1,0 +1,64 @@
+/* SECTION DO FORMULARIO */
+section {
+    width: 280px;
+    margin: auto;
+    border: 1px solid #babbbb;
+    border-radius: 10px;
+    box-shadow: 6px 6px 6px rgb(178, 178, 178);
+}
+
+/* FORMULARIO E SUAS DIVISÕES */
+.formulario, 
+.formulario-nome,
+.formulario-email,
+.formulario-tipo,
+.formulario-documento,
+.formulario-cep,
+.formulario-cep-logradouro,
+.formulario-cep-bairro,
+.formulario-cep-cidade,
+.formulario-cep-estado {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+/* INPUT RADIO DE TIPO DE PESSOA */
+#pessoa-fisica , #pessoa-juridica {
+    margin-top: 10px;
+}
+
+.formulario-tipo-input {
+    flex-direction: row;
+}
+
+/* FONTE DE TODAS AS LABELS */
+.formulario label {
+    font-weight: 600;
+}
+
+/* FONTE DOS INPUTS RADIOS */
+.formulario-tipo-input label {
+    font-weight: 400;
+}
+
+/* BORDA DOS INPUTS */
+.formulario input {
+    border: 1px solid #babbbb;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* BOTÃO DO FORMULARIO */
+.formulario button {
+    width: 140px;
+    height: 35px;
+    border: 1px solid #babbbb;
+    border-radius: 4px;
+
+    background-color: #EDEEEF;
+    color: rgb(38, 206, 195);
+    font-weight: 600;
+}

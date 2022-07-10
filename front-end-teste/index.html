@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/css/cabecalho.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Lista de colaboradores</title>
+</head>
+
+<body>
+    <!-- CONTAINER GERAL PARA USO DO RODAPÉ -->
+    <div class="container">
+
+        <!-- CABEÇALHO -->
+        <header class="cabecalho">
+            <img src="./assets/img/logo-nexum.png" alt="">
+        </header>
+
+        <!-- CONTAINER DA PAGINA -->
+        <div class="container-pagina">
+            
+            <!-- TITULO DA LISTA E BOTOES -->
+            <div class="titulo">
+                <h1>Lista de colaboradores</h1>
+
+                <div class="titulo-menu">
+                    <a href="index.html"><button>Listagem</button></a>
+                    <a href="src/form.html"><button>Cadastrar</button></a>
+                </div>
+            </div>
+
+            <!-- TABELA -->
+            <section>
+                <table class="tabela" id="tabela">
+                    <thead>
+                        <tr class="tabela-titulos">
+                            <th style="width: 35%;">Nome</th>
+                            <th style="width: 15%;">CPF/CNPJ</th>
+                            <th style="width: 15%;">E-mail</th>
+                            <th style="width: 15%;">Cidade</th>
+                            <th style="width: 5%;">UF</th>
+                            <th colspan="2" style="width: 10%;">Ações</th>
+                        </tr>
+                    </thead>
+
+                    <tbody></tbody>
+                </table>
+            </section>
+        </div>
+
+        <!-- RODAPÉ -->
+        <footer></footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" 
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
+        integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw=="
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer">
+    </script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>

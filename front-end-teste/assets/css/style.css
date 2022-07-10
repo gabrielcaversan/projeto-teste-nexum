@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html , body {
+    height: 100%;
+}
+
+.container {
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.container-pagina {
+    margin: 0px 15px;
+}
+
+/* TABELA => RESPONSIVIDADE/SOMBRA */
+.container-pagina section {
+    overflow-x: auto;
+    box-shadow: 6px 6px 6px rgb(178, 178, 178);
+}
+
+/* TABELA => LISTA DE COLABORADORES */
+.tabela {
+    width: 100%;
+    border-spacing: 0;
+    border: 1px solid rgba(0, 0, 0, 0.265);
+}
+
+.tabela tbody tr:nth-child(2n) {
+    background: #EDEEEF;
+}
+
+.tabela-titulos {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(38, 206, 195);
+    text-align: center;
+    height: 30px;
+
+    background-color: rgb(15, 23, 89);
+}
+
+.tabela-editar , .tabela-excluir {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(38, 206, 195);
+    height: 25px;
+    border: 1px solid rgb(24, 32, 130);
+    background-color: rgb(24, 32, 130);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.tabela td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #babbbb;
+}
+
+/* RODAPÉ */
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 8px;
+    background: linear-gradient(45deg, rgb(15, 23, 89), rgb(24, 32, 130) );
+    width: 100%;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../assets/css/cabecalho.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/form.css">
+    <title>Cadastro de colaboradores</title>
+</head>
+
+<body>
+    <!-- CONTAINER GERAL PARA USO DO RODAPÉ -->
+    <div class="container">
+
+        <!-- CABEÇALHO -->
+        <header class="cabecalho">
+            <img src="../assets/img/logo-nexum.png" alt="">
+        </header>
+
+        <!-- CONTAINER DA PAGINA -->
+        <div class="container-pagina">
+
+            <!-- TITULO DA LISTA E BOTOES -->
+            <div class="titulo">
+                <h1>Cadastro de colaboradores</h1>
+
+                <div class="titulo-menu">
+                    <a href="../index.html"><button>Listagem</button></a>
+                    <a href="./form.html"><button>Cadastrar</button></a>
+                </div>
+            </div>
+
+            <!-- FORMULARIO -->
+            <section>
+                <form class="formulario" id="formulario-validacao">
+                    <!-- NOME -->
+                    <div class="formulario-nome">
+                        <label>Nome</label>
+                        <input type="text" name="nome" autocomplete="off" required>
+                    </div>
+
+                    <!-- EMAIL -->
+                    <div class="formulario-email">
+                        <label>E-mail</label>
+                        <input type="email" name="email" autocomplete="off" required>
+                    </div>
+
+                    <!-- TIPO DE PESSOA -->
+                    <div class="formulario-tipo">
+                        <label>Tipo de pessoa</label>
+                        <div class="formulario-tipo-input">
+                            <input type="radio" name="pessoa" id="pessoa-fisica" value="pessoa-fisica" checked> <label
+                                for="pessoa-fisica">Pessoa física</label>
+                            <br>
+                            <input type="radio" name="pessoa" id="pessoa-juridica" value="pessoa-juridica"> <label
+                                for="pessoa-juridica">Pessoa jurídica</label>
+                        </div>
+                    </div>
+
+                    <!-- DOCUMENTO (CPF OU CNPJ) -->
+                    <div class="formulario-documento">
+                        <label>CPF</label>
+                        <input type="text" name="documento" id="documento" autocomplete="off" required>
+                    </div>
+
+                    <!-- CEP -->
+                    <div class="formulario-cep">
+                        <label>CEP</label>
+                        <input type="text" name="cep" id="cep" autocomplete="off" required>
+                    </div>
+
+                    <!-- CEP => LOGRADOURO -->
+                    <div class="formulario-cep-logradouro">
+                        <label>Logradouro</label>
+                        <input type="text" name="logradouro" readonly>
+                    </div>
+
+                    <!-- CEP => BAIRRO -->
+                    <div class="formulario-cep-bairro">
+                        <label>Bairro</label>
+                        <input type="text" name="bairro"  readonly>
+                    </div>
+
+                    <!-- CEP => CIDADE -->
+                    <div class="formulario-cep-cidade">
+                        <label>Cidade</label>
+                        <input type="text" name="cidade"  readonly>
+                    </div>
+
+                    <!-- CEP => ESTADO -->
+                    <div class="formulario-cep-estado">
+                        <label>Estado</label>
+                        <input type="text" name="estado"  readonly>
+                    </div>
+
+                    <!-- FORMULARIO BOTAO -->
+                    <div>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+
+        <!--RODAPÉ-->
+        <footer></footer>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" 
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
+        integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw=="
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer">
+    </script>
+    <script src="../assets/js/form.js"></script>
+</body>
+
+</html>
